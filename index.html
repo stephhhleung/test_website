@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script>(()=>{"use strict";var t,e={appId:"zktz69o7mg",v:2,q:[],call:function(){this.q.push(arguments)}};window.Atlas=e;var n=document.createElement("script");n.async=!0,n.src="https://app.atlas.so/client-js/atlas.bundle.js";var s=document.getElementsByTagName("script")[0];null===(t=s.parentNode)||void 0===t||t.insertBefore(n,s)})();</script>
-
-<script>window.Atlas.call("start");</script>
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,7 +57,22 @@
     <footer>
         <p>&copy; 2023 My Blog Website. All rights reserved.</p>
     </footer>
-
+ <script>
+      (function(d,t) {
+        var BASE_URL="https://app.chatwoot.com";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: 'TBFmpCS3891Do6YGw53e6AFB',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
     
 </body>
 </html>
