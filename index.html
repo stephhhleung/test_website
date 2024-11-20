@@ -59,8 +59,21 @@
         <p>&copy; 2023 My Blog Website. All rights reserved.</p>
     </footer>
 
-   <script>
-(function(){var e=window;var t=document;var n=function(){n.e(arguments)};n.q=[];n.e=function(e){n.q.push(e)};e.Pylon=n;var r=function(){var e=t.createElement("script");e.setAttribute("type","text/javascript");e.setAttribute("async","true");e.setAttribute("src","https://widget.usepylon.com/widget/APP_ID");var n=t.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};if(t.readyState==="complete"){r()}else if(e.addEventListener){e.addEventListener("load",r,false)}})();
+<script>
+  (function(d,t) {
+    var BASE_URL="https://app.chatwoot.com";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.defer = true;
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: 'H2NsZSkkZnXxBGu28xcASNSG',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
 </script>
 
 
